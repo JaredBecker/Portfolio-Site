@@ -3,8 +3,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-import { SwiperModule } from 'swiper/angular';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -33,7 +31,6 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
-        SwiperModule,
     ],
     providers: [HttpClientModule],
     bootstrap: [AppComponent],

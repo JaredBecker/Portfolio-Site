@@ -1,6 +1,11 @@
 <section id="get_in_touch" class="get_in_touch">
     <h2 class="heading text-center mb-5">Get In Touch</h2>
     <div class="container">
+        <ng-container *ngIf="!loading && message !== ''">
+            <div class="form_notification" [ngClass]="{'success': is_ok, 'error': !is_ok}">
+                {{ message }}
+            </div>
+        </ng-container>
         <form [formGroup]="form" (ngSubmit)="submitMessage()">
             <div class="row">
                 <div class="col-12 col-md-6 mb-3">
@@ -22,7 +27,16 @@
                     </div>
                 </div>
             </div>
-            <button class="submit_btn" [disabled]="!form.valid">Send Message</button>
+            <button class="submit_btn" [disabled]="!form.valid">
+                <ng-container *ngIf="!loading; else loader">
+                    Send Message
+                </ng-container>
+                <ng-template #loader>
+                    <div class="custom_spinner spinner-border text-white" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </ng-template>
+            </button>
         </form>
     </div>
 </section>

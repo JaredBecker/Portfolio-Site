@@ -1,0 +1,27 @@
+.experience_section {
+
+    .experience_card {
+        .experience_card_title {
+            text-align: center;
+            padding-bottom: 1.5rem;
+
+            @include media-breakpoint-up(md) {
+                text-align: left;
+                padding-bottom: 0;
+            }
+        }
+
+        .experience_card_section {
+            font-size: 1.25rem;
+
+            .year {
+                font-size: font-size(1.5rem);
+            }
+
+            .tasks {
+                font-weight: 300;
+                color: $light-grey;
+            }
+        }
+    }
+}

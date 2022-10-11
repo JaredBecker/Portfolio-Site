@@ -1,6 +1,25 @@
 .get_in_touch {
+    .form_notification {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid;
+        margin-bottom: 0.75rem;
+
+        &.success {
+            background-color: #d1e7dd;
+            color: #0f5132;
+            border-color: #badbcc;
+        }
+
+        &.error {
+            background-color: #f8d7da;
+            color: #842029;
+            border-color: #f5c2c7;
+        }
+    }
+
     .textarea {
-        height: 200px;
+        height: 120px;
     }
 
     .submit_btn {
@@ -13,6 +32,11 @@
         width: 100%;
         margin-top: 1rem;
         font-weight: bold;
+
+        .custom_spinner {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
 
         &:disabled {
             opacity: 0.8;

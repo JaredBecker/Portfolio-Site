@@ -8,38 +8,37 @@ export const EXPERIENCE: ExperienceSection[] = [
             {
                 date_range: '2017 - 2018',
                 tasks: [
-                    'Working as an intern. I was mainly learning JS during this stage.',
-                    'Would assist with basic support tasks like setting up emails, domain and updating content on websites.'
+                    'Working as an intern where I focused on honing my JS skills.',
+                    'I Would assist with basic support tasks like setting up emails, domains and updating client website content.'
                 ]
             },
             {
                 date_range: '2018 - 2019',
                 tasks: [
-                    'Increased support roles like giving basic training to new clients, minor bug fixes in templates, etc...',
-                    'Started building new templates and custom modules for clients websites.'
+                    'My support scope expanded to more hands on tasks, including client training, system improvements and platform templates.',
+                    'My development tasks expanded to building new templates and custom modules.'
                 ]
             },
             {
                 date_range: '2019 - 2020',
                 tasks: [
-                    'Moved up to senior support. My roles included setting up IQ / Omni integrations, fixing any issue clients would have with stock/order updates as well as setting up OS Ticket support system.',
-                    'Started working on our backend with small bug fixes and updates to the eSolve system.'
+                    'As the senior support consultant, my tasks included setting up IQ / Omni integrations, fixing client issues with stock and order updates as well as setting up and managing internal OS Ticket support system.',
+                    'I started adding new integrations and functionality to the platform including system notifications and smart banner module.'
                 ]
             },
             {
                 date_range: '2020 - 2021',
                 tasks: [
-                    'Training of new interns.',
-                    'Started working on building backend modules to add custom functionality to eSolve.',
-                    'Tasked with building completely custom sites from scratch.'
+                    'Part of my duties included training and managing new staff.',
+                    'Tasked with building and migrating custom client websites.'
                 ]
             },
             {
                 date_range: '2021 - 2022',
                 tasks: [
-                    'Started learning Angular.',
-                    'Help build our first PWA template.',
-                    'Currently working on a time keeping control panel used to see time spent working on a clients site.'
+                    'Assisted with company migration to Angular based products which included new Google Map geolocation services and product variations.',
+                    'Designed and developed new standard PWA websites.',
+                    'Started with implementing internal time keeping product.'
                 ]
             },
         ]
