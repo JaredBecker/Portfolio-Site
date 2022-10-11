@@ -1,0 +1,55 @@
+.side_menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    transition: left 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(#000, 0.5);
+
+    &.show {
+        left: 0;
+    }
+
+    &_list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        &_link {
+            color: $dark-grey;
+            text-decoration: none;
+            padding: 0.5rem;
+            margin-bottom: 0.25rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            display: block;
+
+            &:hover {
+                background-image: $highlight-gradient;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.shadow_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-image: $highlight-gradient;
+    display: none;
+    z-index: 9;
+
+    &.show {
+        display: block;
+    }
+}

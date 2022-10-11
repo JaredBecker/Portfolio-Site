@@ -1,0 +1,48 @@
+.custom_nav {
+    padding: 1rem;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(#9e9e9e, 0.3);
+    display: flex;
+    justify-content: end;
+    background-image: $highlight-gradient;
+    color: #fff;
+
+    .logo {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .side_menu_btn {
+        border: none;
+        outline: none;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        height: 45px;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .menu_list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &_item_link {
+            padding: 0.75rem;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+            margin: 0 0.25rem;
+
+            &:hover {
+                background-color: #fff;
+                color: $dark-grey;
+            }
+        }
+    }
+}

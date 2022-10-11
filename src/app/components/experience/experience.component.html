@@ -1,0 +1,28 @@
+<section id="experience_section" class="experience_section" *ngIf="work_experience.length > 0">
+    <h2 class="heading text-center mb-5">Work Experience</h2>
+    <div class="container">
+        <div class="experience_card">
+            <div class="row">
+                <ng-container *ngFor="let experience of work_experience">
+                    <div class="col-12 col-md-4">
+                        <h3 class="experience_card_title text_gradient">
+                            {{ experience.title }}
+                            <br />
+                            {{ experience.date_range }}
+                        </h3>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div *ngFor="let task of experience.tasks" class="experience_card_section">
+                            <div class="year text_gradient">{{ task.date_range }}</div>
+                            <ul class="tasks">
+                                <li *ngFor="let job of task.tasks">
+                                    {{ job }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</section>

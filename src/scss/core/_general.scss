@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    background-image: $background-gradient;
+    font-family: $default-font
+}
+
+section {
+    padding: 3rem;
+}
+
+.heading {
+    color: $dark-grey;
+    font-weight: bold;
+    font-size: font-size(3.5rem);
+}
+
+.sub_heading {
+    color: $light-grey;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.text_gradient {
+    font-weight: bold;
+    background: $highlight-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ng-touched.ng-invalid {
+    border-color: #ff0000;
+}
+
+.ng-valid {
+    border-color: #1eb31e;
+}

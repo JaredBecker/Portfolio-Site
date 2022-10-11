@@ -1,0 +1,19 @@
+<nav class="side_menu" [ngClass]="{'show': show_menu}">
+    <img class="img-fluid" src="assets/logo.png" />
+    <hr>
+    <ul class="side_menu_list">
+        <li>
+            <a class="side_menu_list_link" (click)="scrollTo('intro_section')">Home</a>
+        </li>
+        <li>
+            <a class="side_menu_list_link" (click)="scrollTo('skills_section')">Skills</a>
+        </li>
+        <li>
+            <a class="side_menu_list_link" (click)="scrollTo('experience_section')">Experience</a>
+        </li>
+        <li>
+            <a class="side_menu_list_link" (click)="scrollTo('get_in_touch')">Get In Touch</a>
+        </li>
+    </ul>
+</nav>
+<div class="shadow_layer" [ngClass]="{'show': show_menu}" (click)="closeMenu()"></div>

@@ -1,0 +1,51 @@
+.intro_section {
+    .intro_text {
+        .primary {
+            transition: all 0.2s ease;
+            font-weight: bold;
+            color: #484848;
+            font-style: italic;
+            letter-spacing: 0.125rem;
+            font-size: font-size(3.5rem);
+
+            &::after {
+                content: '';
+                display: block;
+                animation: width_animation 5s linear infinite;
+                height: 0.5rem;
+                width: 100%;
+                background-color: $gradient-purple;
+                background: $highlight-gradient;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .secondary {
+            color: $light-grey;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@keyframes width_animation {
+    0% {
+        width: 100%;
+    }
+
+    25% {
+        width: 105%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    75% {
+        width: 95%
+    }
+
+    100% {
+        width: 100%;
+    }
+}

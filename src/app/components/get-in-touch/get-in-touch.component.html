@@ -1,0 +1,28 @@
+<section id="get_in_touch" class="get_in_touch">
+    <h2 class="heading text-center mb-5">Get In Touch</h2>
+    <div class="container">
+        <form [formGroup]="form" (ngSubmit)="submitMessage()">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input formControlName="name" type="text" class="form-control" id="floating_name" required />
+                        <label for="floating_name">Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input formControlName="email" type="email" class="form-control" id="floating_email" required />
+                        <label for="floating_email">Email</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea formControlName="message" class="form-control textarea" id="floating_textarea" required></textarea>
+                        <label for="floating_textarea">How can I help you?</label>
+                    </div>
+                </div>
+            </div>
+            <button class="submit_btn" [disabled]="!form.valid">Send Message</button>
+        </form>
+    </div>
+</section>

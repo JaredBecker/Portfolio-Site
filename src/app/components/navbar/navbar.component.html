@@ -1,0 +1,24 @@
+<nav class="custom_nav">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="logo" (click)="scrollTo('intro_section')">
+            <img src="assets/logo.png" />
+        </a>
+        <button class="side_menu_btn d-block d-md-none" (click)="showSideMenu()" type="button">
+            <i class="fa-solid fa-bars text_gradient"></i>
+        </button>
+        <ul class="menu_list d-none d-md-flex">
+            <li class="menu_list_item">
+                <a class="menu_list_item_link" (click)="scrollTo('intro_section')">Home</a>
+            </li>
+            <li class="menu_list_item">
+                <a class="menu_list_item_link" (click)="scrollTo('skills_section')">Skills</a>
+            </li>
+            <li class="menu_list_item">
+                <a class="menu_list_item_link" (click)="scrollTo('experience_section')">Experience</a>
+            </li>
+            <li class="menu_list_item">
+                <a class="menu_list_item_link" (click)="scrollTo('get_in_touch')">Get In Touch</a>
+            </li>
+        </ul>
+    </div>
+</nav>

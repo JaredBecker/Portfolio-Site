@@ -1,0 +1,22 @@
+.get_in_touch {
+    .textarea {
+        height: 200px;
+    }
+
+    .submit_btn {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+        background-image: $highlight-gradient;
+        color: #fff;
+        width: 100%;
+        margin-top: 1rem;
+        font-weight: bold;
+
+        &:disabled {
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+    }
+}
